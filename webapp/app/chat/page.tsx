@@ -11,7 +11,7 @@ const mockApiCall = async (message: string) => {
   return `This is a mock response to: "${message}"`;
 };
 
-const ChatGPTClone: React.FC = () => {
+export default function Page() {
   const [messages, setMessages] = useState<
     { role: "user" | "assistant"; content: string }[]
   >([]);
@@ -65,6 +65,4 @@ const ChatGPTClone: React.FC = () => {
       </form>
     </div>
   );
-};
-
-export default ChatGPTClone;
+}
