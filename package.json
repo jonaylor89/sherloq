@@ -1,7 +1,16 @@
 {
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev:next": "turbo run dev:next",
-    "dev:api": "turbo run dev:api"
+    "dev": "turbo dev",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo run clean",
+    "lint": "turbo run lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck"
   },
   "devDependencies": {
     "turbo": "^2.1.2"
