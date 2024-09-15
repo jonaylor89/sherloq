@@ -2,3 +2,4 @@
 2024-09-15T22:12:26.871538Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
 2024-09-15T22:12:46.771967Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo/cookies/2.cookie")}
 2024-09-15T22:12:46.771978Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2024-09-15T22:13:13.367138Z  INFO turborepo_lib::daemon::server: triggering shutdown

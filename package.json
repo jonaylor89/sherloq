@@ -4,6 +4,8 @@
     "dev:api": "turbo run dev:api"
   },
   "devDependencies": {
-    "turbo": "^1.10.0"
-  }
+    "turbo": "^2.1.2"
+  },
+  "packageManager": "npm@10.7.0",
+  "name": "sherloq"
 }
