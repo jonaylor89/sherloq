@@ -1,0 +1,8 @@
+REPLACE OR CREATE TABLE targets (
+    id UUID NOT NULL,
+    version INT NOT NULL DEFAULT 1,
+    user_id UUID NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id, version)
+);
