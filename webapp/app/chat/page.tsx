@@ -36,7 +36,7 @@ const ChatGPTClone: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col h-[90vh] bg-gray-900 text-white">
+    <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       <ScrollArea className="flex-grow p-4">
         {messages.map((message, index) => (
           <div

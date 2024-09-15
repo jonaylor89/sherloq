@@ -34,11 +34,6 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="min-h-screen flex flex-col items-center">
-            <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-              <div className="w-full flex justify-between items-center p-3 px-5 text-sm">
-                {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
-              </div>
-            </nav>
             <div className="w-full">{children}</div>
           </main>
         </ThemeProvider>
