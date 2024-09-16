@@ -4,16 +4,16 @@ import { Badge } from "@/components/ui/badge";
 import { Search, Shield, Eye, Settings, SearchX } from "lucide-react";
 import Link from "next/link";
 
-export default function LandingPage() {
-  const exampleSearches = [
-    "John Smith",
-    "Emma Johnson",
-    "Michael Chen",
-    "Sophia Patel",
-    "Alex Rodriguez",
-    "Olivia Kim",
-  ];
+const exampleSearches = [
+  "Taylor Swift",
+  "Brad Pitt",
+  "Beyoncé",
+  "Leonardo DiCaprio",
+  "Oprah Winfrey",
+  "Tom Hanks",
+];
 
+export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-b from-stone-100 to-amber-50">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-stone-800 text-stone-100">
@@ -64,7 +64,7 @@ export default function LandingPage() {
               <div className="w-full max-w-sm space-y-2">
                 <form className="flex space-x-2">
                   <Input
-                    className="flex-1 px-3 py-2 text-lg border-2 border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                    className="bg-white text-black flex-1 px-3 py-2 text-lg border-2 border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
                     placeholder="Enter a name to search..."
                     type="text"
                   />
@@ -75,7 +75,7 @@ export default function LandingPage() {
                     Search
                   </Button>
                 </form>
-                <p className="text-xs text-stone-600">Try investigating:</p>
+                <p className="text-xs text-stone-600">Try searching:</p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {exampleSearches.map((name, index) => (
                     <Badge
@@ -180,7 +180,7 @@ export default function LandingPage() {
               <div className="w-full max-w-sm space-y-2">
                 <form className="flex space-x-2">
                   <Input
-                    className="flex-1 px-3 py-2 text-stone-900 border-2 border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
+                    className="bg-white flex-1 px-3 py-2 text-stone-900 border-2 border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
                     placeholder="Enter your email"
                     type="email"
                   />
@@ -207,18 +207,18 @@ export default function LandingPage() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-stone-800 text-stone-100">
         <p className="text-xs text-stone-400">
-          © 2023 Sherloq Investigations. All rights reserved.
+          © {new Date().getFullYear()} Put a Girl On Inc. All rights reserved.
         </p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link
             className="text-xs hover:underline underline-offset-4 hover:text-amber-500 transition-colors"
-            href="#"
+            href="/terms"
           >
             Terms of Service
           </Link>
           <Link
             className="text-xs hover:underline underline-offset-4 hover:text-amber-500 transition-colors"
-            href="#"
+            href="/privacy"
           >
             Privacy Policy
           </Link>
