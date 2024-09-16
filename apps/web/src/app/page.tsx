@@ -53,7 +53,7 @@ export default function LandingPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none font-serif">
+                <h1 className="text-black text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none font-serif">
                   Uncover the Truth with Sherloq
                 </h1>
                 <p className="mx-auto max-w-[700px] text-stone-700 md:text-xl font-serif">
@@ -65,14 +65,14 @@ export default function LandingPage() {
                 <form className="flex space-x-2">
                   <Input
                     className="flex-1 px-3 py-2 text-lg border-2 border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-transparent"
-                    placeholder="Enter a name to investigate..."
+                    placeholder="Enter a name to search..."
                     type="text"
                   />
                   <Button
                     className="px-4 py-2 text-lg font-semibold text-stone-100 bg-amber-600 rounded-md hover:bg-amber-700 focus:outline-none focus:ring-2 focus:ring-amber-600 focus:ring-opacity-50"
                     type="submit"
                   >
-                    Investigate
+                    Search
                   </Button>
                 </form>
                 <p className="text-xs text-stone-600">Try investigating:</p>
@@ -131,7 +131,7 @@ export default function LandingPage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-10 lg:grid-cols-2 items-center">
               <div className="space-y-4">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-serif">
+                <h2 className="text-black text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-serif">
                   The Art of Digital Sleuthing
                 </h2>
                 <p className="max-w-[600px] text-stone-700 md:text-xl">
@@ -142,15 +142,15 @@ export default function LandingPage() {
                 <ul className="space-y-2">
                   <li className="flex items-center space-x-2">
                 <SearchX className="h-5 w-5 text-amber-600" />
-                    <span>Advanced identity verification</span>
+                    <span className="text-black">Advanced identity verification</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Search className="h-5 w-5 text-amber-600" />
-                    <span>Deep web scanning capabilities</span>
+                    <span className="text-black">Deep web scanning capabilities</span>
                   </li>
                   <li className="flex items-center space-x-2">
                     <Shield className="h-5 w-5 text-amber-600" />
-                    <span>Encrypted data protection</span>
+                    <span className="text-black">Encrypted data protection</span>
                   </li>
                 </ul>
               </div>
@@ -168,7 +168,7 @@ export default function LandingPage() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-serif">
+                <h2 className="text-black text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-serif">
                   Begin Your Investigation Today
                 </h2>
                 <p className="mx-auto max-w-[600px] text-stone-700 md:text-xl">
