@@ -5,7 +5,6 @@ use axum::{
 };
 use tracing;
 
-
 use sherloq_api::tracing::init_tracing;
 
 #[tokio::main]
